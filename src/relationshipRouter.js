@@ -1,7 +1,9 @@
 relationshipRouter.get('/relationships', (req, res) => {
     Relationship.find({}).exec((err, relationships) => {
         if (err) return next(err);
-        res.json(relationships);
+        res.json(
+            {'relationships': relationships, 'size': relationships.size()}
+        );
     });
 });
 

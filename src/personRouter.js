@@ -1,7 +1,9 @@
 personRouter.get('/persons', (req, res) => {
     Person.find({}).exec((err, persons) => {
         if (err) return next(err);
-        res.json(persons);
+        res.json(
+            {'persons': persons, 'size': persons.size()}
+        );
     });
 });
 

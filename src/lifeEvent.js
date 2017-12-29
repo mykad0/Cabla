@@ -2,9 +2,7 @@ const LifeEventSchema = new Schema({
     place: String,
     date: Date,
     docs: Array,
-    note: String,
-    createdAt: { type: Date, default: Date.now },
-    updatedAt: { type: Date, default: Date.now }
+    note: String
 });
 
 const CheckableInfoSchema = new Schema({

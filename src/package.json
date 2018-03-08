@@ -17,5 +17,11 @@
   "dependencies": {
     "express": "^4.16.2",
     "mongoose": "^5.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^3.1.0"
   }
 }
